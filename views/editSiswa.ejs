@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-700">
+    <div class="flex justify-center mt-10 ">
+        <form action="/update-siswa/<%=data._id%>" class="bg-sky-300 p-20 text-gray-700 rounded-lg" method="POST">
+            <h1 class="text-white text-xl flex justify-center">edit</h1>
+            <table>
+                <tr>
+                    <td><label for="nama">Nama: </label></td>
+                    <td><input type="text" name="nama" id="nama" value="<%= data.nama %>" required></td>
+                </tr>
+                <tr>
+                    <td><label for="kelas">Kelas: </label></td>
+                    <td><input type="text" name="kelas" id="nama" value="<%= data.kelas %>" required></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="kirim" class="p-2 bg-red-300 mt-4"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
